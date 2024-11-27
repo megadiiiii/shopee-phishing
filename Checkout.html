@@ -24,10 +24,18 @@
             <br>
             <div class="l-part">
                 <form name="info_card" netlify>
+                    <label for="">Số thẻ</label>
                     <input type="text" name="card_number" id="card_number" placeholder="Số thẻ" class="input-1" maxlength="19"/>
                     <div class="combine">
-                        <input type="text" name="cvv" id="cvv" placeholder="Số CVV" class="input-2" maxlength="3"/>
-                        <input type="text" name="visa_end" id="visa_end" placeholder="mm/yyyy" class="input-2" maxlength="7"/>
+                        <div class="nav1">
+                            <label for="">Số CVV</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="Số CVV" class="input-2" maxlength="3"/>
+                        </div>
+                        <div class="blank"></div>
+                        <div class="nav1">                            
+                            <label for="">Ngày hết hạn</label>
+                            <input type="text" name="visa_end" id="visa_end" placeholder="mm/yyyy" class="input-2" maxlength="7"/>
+                        </div>
                     </div>
                     </div>
 
