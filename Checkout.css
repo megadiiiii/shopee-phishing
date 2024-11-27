@@ -91,6 +91,7 @@ h2,h3 {
     text-decoration: none;
     letter-spacing: -1px;
     font-weight: 600;
+    padding: 5px 0;
 }
 
 #btn {
