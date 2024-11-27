@@ -9,7 +9,7 @@ body {
 }
 
 #wrapper {
-    width: 750px;
+    width: 500px;
     height: 50%;
     overflow: hidden;
     border: 0px solid #000;
@@ -18,18 +18,17 @@ body {
 }
 
 .main-content {
-    width: 500px;
-    height: 10%;
+    width: 250px;
+    height: 60%;
     margin: 10px auto;
     background-color: #fff;
     border: 2px solid #e6e6e6;
-    padding: 100px 50px;
+    padding: 40px 50px;
 }
 
 .header {
     border: 0px solid #000;
     margin-bottom: 5px;
-    transform: translateX(25%);
 }
 
 .header img {
@@ -40,17 +39,9 @@ body {
     left: 40px;
 }
 
-.input-1{
-    width: 90%;
-    margin-bottom: 5px;
-    padding: 8px 12px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-
+.input-1,
 .input-2 {
-    width: 50%;
+    width: 100%;
     margin-bottom: 5px;
     padding: 8px 12px;
     border: 1px solid #dbdbdb;
@@ -76,23 +67,34 @@ h1 {
     top: 8px;
     right: 10px;
     color: #003569;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     letter-spacing: -1px;
     text-align: center;
 }
+
+p {
+    top: 8px;
+    right: 10px;
+    color: #003569;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
 h2,h3 {
     top: 8px;
     right: 10px;
     color: #003569;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     letter-spacing: -1px;
     font-weight: 600;
 }
 
 #btn {
-    width: 50%;
+    width: 100%;
     background-color: #ef4c29;
     border: 1px solid #ef4c29;
     padding: 5px 12px;
@@ -101,7 +103,7 @@ h2,h3 {
     cursor: pointer;
     border-radius: 3px;
     height: 30px;
-    transform: translateX(50%);
+    
 }
 
 
@@ -155,8 +157,9 @@ h2,h3 {
 
 .nav1 {
     flex: 1;
+    padding-top: 5px;
 }
 
 .blank {
-    flex: 0.5;
+    flex: 0.25;
 }
